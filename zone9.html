@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+<script type="text/javascript" src="/static/js/analytics.js"></script>
+<script type="text/javascript">archive_analytics.values.server_name="wwwb-app18.us.archive.org";archive_analytics.values.server_ms=320;</script>
+<link type="text/css" rel="stylesheet" href="/static/css/banner-styles.css"/>
+
+
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="generator" content="PSPad editor, www.pspad.com">
+  <title>Zone system</title>
+  <style>
+  body {
+    color: black; 
+    background-color: #000; 
+    padding: 0px 0px; 
+    margin: 0px 0px; 
+    font-family: sans, arial, helvetica; 
+    font-size: 0.8em; 
+    /* overflow-x: hidden; */
+  }
+  a{
+    color: #c00;
+    font-weight: bold;
+    text-decoration:none;
+  }
+  a:hover{
+    color: #f00;
+    font-weight: bold;
+  }
+  #header {position: relative; width: 100%; color: #333; padding: 0em; margin: 0px; background-color: #ddd;}
+  #header_logo{
+  float:right;
+  position: relative;
+  height: 3.3em;
+  background-color: #ddd;
+  color: #333;
+  text-align: right;
+  margin-right: 0px;
+  width: 30%; 
+  font-style: italic;
+  }
+  #zs_0{
+  position: relative;
+  float: left;
+  width: 5%;
+  min-width: 3em;
+  height: 3em;
+  background-color: #000;
+  }
+  #zs_0 a{
+    color: #333;
+  }
+  #zs_0 a:hover{
+    color: #fff;
+  }
+  #zs_1{
+  position: relative;
+  float: left;
+  width: 5%;
+  height: 3em;
+  min-width: 3em;
+  background-color: #222;
+  }
+  #zs_1 a{
+    color: #555;
+  }
+  #zs_1 a:hover{
+    color: #fff;
+  }
+  #zs_2{
+  position: relative;
+  float: left;
+  width: 5%;
+  height: 3em;
+  min-width: 3em;
+  background-color: #333;
+  }
+  #zs_2 a{
+    color: #666;
+  }
+  #zs_2 a:hover{
+    color: #fff;
+  }
+  #zs_3{
+  position: relative;
+  float: left;
+  width: 5%;
+  height: 3em;
+  min-width: 3em;
+  background-color: #444;
+  }
+  #zs_3 a{
+    color: #777;
+  }
+  #zs_3 a:hover{
+    color: #fff;
+  }
+  #zs_4{
+  position: relative;
+  float: left;
+  width: 5%;
+  height: 3em;
+  min-width: 3em;
+  background-color: #666;
+  }
+  #zs_4 a{
+    color: #999;
+  }
+  #zs_4 a:hover{
+    color: #fff;
+  }
+  #zs_5{
+  position: relative;
+  float: left;
+  width: 5%;
+  height: 3em;
+  min-width: 3em;
+  background-color: #888;
+  }
+  #zs_5 a{
+    color: #bbb;
+  }
+  #zs_5 a:hover{
+    color: #fff;
+  }
+  #zs_6{
+  position: relative;
+  float: left;
+  width: 5%;
+  height: 3em;
+  min-width: 3em;
+  background-color: #999;
+  }
+  #zs_6 a{
+    color: #ccc;
+  }
+  #zs_6 a:hover{
+    color: #fff;
+  }
+  #zs_7{
+  position: relative;
+  float: left;
+  width: 5%;
+  height: 3em;
+  min-width: 3em;
+  background-color: #aaa;
+  }
+  #zs_7 a{
+    color: #ddd;
+  }
+  #zs_7 a:hover{
+    color: #fff;
+  }
+  #zs_8{
+  position: relative;
+  float: left;
+  width: 5%;
+  height: 3em;
+  min-width: 3em;
+  background-color: #ccc;
+  }
+  #zs_8 a{
+    color: #777;
+  }
+  #zs_8 a:hover{
+    color: #000;
+  }
+  #zs_9{
+  position: relative;
+  float: left;
+  width: 5%;
+  height: 3em;
+  min-width: 3em;
+  background-color: #ddd;
+  color: black;
+  }
+  #zs_9 a{
+    color: #888;
+  }
+  #zs_9 a:hover{
+    color: #000;
+  }
+  #zs_10{
+  position: relative;
+  float: left;
+  width: 5%;
+  height: 3em;
+  min-width: 3em;
+  background-color: #fff;
+  color: black;
+  }
+  #zs_10 a{
+    color: #ccc;
+  }
+  #zs_10 a:hover{
+    color: #000;
+  }
+  #menu_descriptions{
+    background-color: #ddd;
+    color: #333;    
+    width: 100%; 
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+  #menu_descriptions h1{
+    font-size: 1.5em;
+  }
+  #content_wrap{
+    position: relative;
+    width: 100%;
+    background-color: #999;
+    padding-top: 4em;
+    padding-bottom: 7em;
+  }
+  #content{
+    position: relative;
+    border: 1px solid white;
+    margin-left: 4%;
+    margin-right: 4%; 
+    padding-top: 3em;
+    padding-bottom: 5em;
+    background-color: white;
+  }
+  #footer{
+    position: relative;
+    margin-bottom: 0px;
+    padding: 2% 5%;
+    width: 90%;
+    color: white;
+    background-color: black;
+    font-size:  0.76em;
+  }
+  .clear_float{
+    width: 100%;
+    height: 1em;
+    margin: 0px 0px -1px 0px;
+    clear: both;
+  }
+  .left_content{
+    position: relative;
+    float: left;
+    width: 30%;
+    border-right: 4px solid #888;
+    margin-left: 4%;
+  }
+   .left_content_under_menu{
+    position: relative;
+    float: left;
+    width: 30%;
+    min-width: 200px;
+    border-right: 2px solid #aaa;
+    margin-left: 4%;
+  }
+  .left_content h3 {
+    display: inline;
+    font-size: 1.2em;
+  }
+  .right_content{
+    position: relative;
+    float: right;
+    width: 50%;
+    padding-top: 0px;
+    border: 0px solid #888;
+    margin-right: 2%;
+    margin-left: 5%;
+  }
+  .zone_padding {padding: 1em; height: 1em;}
+  .title{ font-size: 2em; font-style: italic; font-weight:bold; padding-top: 0.3em; padding-right: 0.7em; background-color: none;}
+  .subtitle{ font-size: 0.7em; padding-right: 1.2em; }
+  .menu_desc_content{
+     position: relative;
+     margin-right: 15%;
+     margin-left: 5%;
+  }
+  </style></head>
+  
+  <body onload="rightize();">
+
+
+<!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<script type="text/javascript" src="/static/js/disclaim-element.js" ></script>
+<script type="text/javascript" src="/static/js/graph-calc.js" ></script>
+<script type="text/javascript" src="/static/jflot/jquery.min.js" ></script>
+<script type="text/javascript">//<![CDATA[
+var __wm = (function(){
+var wbPrefix = "/web/";
+var wbCurrentUrl = "http://ventil.ws/zone9.html";
+
+var firstYear = 1996;
+var imgWidth = 500,imgHeight = 27;
+var yearImgWidth = 25,monthImgWidth = 2;
+var displayDay = "8";
+var displayMonth = "Dec";
+var displayYear = "2013";
+var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+var $D=document,$=function(n){return document.getElementById(n)};
+var trackerVal,curYear = -1,curMonth = -1;
+var yearTracker,monthTracker;
+function showTrackers(val) {
+  if (val===trackerVal) return;
+  var $ipp=$("wm-ipp");
+  var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
+  if (val) {
+    $ipp.className="hi";
+  } else {
+    $ipp.className="";
+    $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
+  }
+  yearTracker.style.display=val?"inline":"none";
+  monthTracker.style.display=val?"inline":"none";
+  trackerVal = val;
+}
+function getElementX2(obj) {
+  var $e=jQuery(obj);
+  return (typeof $e=="undefined"||typeof $e.offset=="undefined")?
+    getElementX(obj):Math.round($e.offset().left);
+}
+function trackMouseMove(event,element) {
+  var eventX = getEventX(event);
+  var elementX = getElementX2(element);
+  var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
+  var monthOff = xOff % yearImgWidth;
+
+  var year = Math.floor(xOff / yearImgWidth);
+  var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
+  // 1 extra border pixel at the left edge of the year:
+  var month = (year * 12) + monthOfYear;
+  var day = monthOff % 2==1?15:1;
+  var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
+    zeroPad(day,2) + "000000";
+
+  $("displayYearEl").innerHTML=year+firstYear;
+  $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
+  // looks too jarring when it changes..
+  //$("displayDayEl").innerHTML=zeroPad(day,2);
+  var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
+  $("wm-graph-anchor").href=url;
+
+  if(curYear != year) {
+    var yrOff = year * yearImgWidth;
+    yearTracker.style.left = yrOff + "px";
+    curYear = year;
+  }
+  if(curMonth != month) {
+    var mtOff = year + (month * monthImgWidth) + 1;
+    monthTracker.style.left = mtOff + "px";
+    curMonth = month;
+  }
+}
+function hideToolbar() {
+  $("wm-ipp").style.display="none";
+}
+function bootstrap() {
+  var $spk=$("wm-ipp-sparkline");
+  yearTracker=$D.createElement('div');
+  yearTracker.className='yt';
+  with(yearTracker.style){
+    display='none';width=yearImgWidth+"px";height=imgHeight+"px";
+  }
+  monthTracker=$D.createElement('div');
+  monthTracker.className='mt';
+  with(monthTracker.style){
+    display='none';width=monthImgWidth+"px";height=imgHeight+"px";
+  }
+  $spk.appendChild(yearTracker);
+  $spk.appendChild(monthTracker);
+
+  var $ipp=$("wm-ipp");
+  $ipp&&disclaimElement($ipp);
+}
+return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
+})();//]]>
+</script>
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  min-width:800px !important;
+}
+</style>
+<div id="wm-ipp" lang="en" style="display:none;">
+
+<div style="position:fixed;left:0;top:0;width:100%!important">
+<div id="wm-ipp-inside">
+   <table style="width:100%;"><tbody><tr>
+   <td id="wm-logo">
+       <a href="/web/" title="Wayback Machine home page"><img src="/static/images/toolbar/wayback-toolbar-logo.png" alt="Wayback Machine" width="110" height="39" border="0" /></a>
+   </td>
+   <td class="c">
+       <table style="margin:0 auto;"><tbody><tr>
+       <td class="u" colspan="2">
+       <form target="_top" method="get" action="/web/form-submit.jsp" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://ventil.ws/zone9.html" style="width:400px;" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20131208112902" /><input type="submit" value="Go" /><span id="wm_tb_options" style="display:block;"></span></form>
+       </td>
+       <td class="n" rowspan="2">
+           <table><tbody>
+           <!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+           <tr class="m">
+           	<td class="b" nowrap="nowrap">
+		
+		    Nov
+		
+		</td>
+		<td class="c" id="displayMonthEl" title="You are here: 11:29:02 Dec 8, 2013">DEC</td>
+		<td class="f" nowrap="nowrap">
+		
+		    Jan
+		
+                </td>
+	    </tr>
+           <!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+           <tr class="d">
+               <td class="b" nowrap="nowrap">
+               
+                       <img src="/static/images/toolbar/wm_tb_prv_off.png" alt="Previous capture" width="14" height="16" border="0" />
+               
+               </td>
+               <td class="c" id="displayDayEl" style="width:34px;font-size:24px;" title="You are here: 11:29:02 Dec 8, 2013">8</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   <img src="/static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0"/>
+               
+	       </td>
+           </tr>
+           <!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+           <tr class="y">
+	       <td class="b" nowrap="nowrap">
+               
+                   2012
+               
+               </td>
+               <td class="c" id="displayYearEl" title="You are here: 11:29:02 Dec 8, 2013">2013</td>
+	       <td class="f" nowrap="nowrap">
+               
+                   2014
+               
+	       </td>
+           </tr>
+           </tbody></table>
+       </td>
+       </tr>
+       <tr>
+       <td class="s">
+           <a class="t" href="/web/20131208112902*/http://ventil.ws/zone9.html" title="See a list of every capture for this URL">1 captures</a>
+           <div class="r" title="Timespan for captures of this URL">8 Dec 13 - 8 Dec 13</div>
+       </td>
+       <td class="k">
+       <a href="" id="wm-graph-anchor">
+       <div id="wm-ipp-sparkline" title="Explore captures for this URL">
+	 <img id="sparklineImgId" alt="sparklines"
+		 onmouseover="__wm.st(1)" onmouseout="__wm.st(0)"
+		 onmousemove="__wm.mv(event,this)"
+		 width="500"
+		 height="27"
+		 border="0"
+		 src="/web/jsp/graph.jsp?graphdata=500_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000000000_2003:-1:000000000000_2004:-1:000000000000_2005:-1:000000000000_2006:-1:000000000000_2007:-1:000000000000_2008:-1:000000000000_2009:-1:000000000000_2010:-1:000000000000_2011:-1:000000000000_2012:-1:000000000000_2013:11:000000000001_2014:-1:000000000000_2015:-1:000000000000" />
+       </div>
+       </a>
+       </td>
+       </tr></tbody></table>
+   </td>
+   <td class="r">
+       <a href="#close" onclick="__wm.h();return false;" style="background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;" title="Close the toolbar">Close</a>
+       <a href="http://faq.web.archive.org/" style="background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;" title="Get some help using the Wayback Machine">Help</a>
+   </td>
+   </tr></tbody></table>
+</div>
+</div>
+</div>
+<script type="text/javascript">__wm.bt();</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+
+  <div id="header">
+    <div id="header_logo">
+      <div class="title">Zone XIII</div>
+      <div class="subtitle">Photography</div>
+      <div class="subtitle">by Milan "Ventil" Toman</div>
+    </div>
+    <div id="zs_0"><a href="zone0.html"><object><div class="zone_padding">0</div></object></a></div>
+    <div id="zs_1"><a href="zone1.html"><object><div class="zone_padding">I</div></object></a></div>
+    <div id="zs_2"><a href="zone2.html"><object><div class="zone_padding">II</div></object></a></div>
+    <div id="zs_3"><a href="zone3.html"><object><div class="zone_padding">III</div></object></a></div>
+    <div id="zs_4"><a href="zone4.html"><object><div class="zone_padding">IV</div></object></a></div>
+    <div id="zs_5"><a href="zone5.html"><object><div class="zone_padding">V</div></object></a></div>
+    <div id="zs_6"><a href="zone6.html"><object><div class="zone_padding">VI</div></object></a></div>
+    <div id="zs_7"><a href="zone7.html"><object><div class="zone_padding">VII</div></object></a></div>
+    <div id="zs_8"><a href="zone8.html"><object><div class="zone_padding">VIII</div></object></a></div>
+    <div id="zs_9"><a href="zone9.html"><object><div class="zone_padding">IX</div></object></a></div>
+    <div id="zs_10"><a href="zone10.html"><object><div class="zone_padding">X</div></object></a></div>
+    <div class="clear_float"></div>
+    <div id="menu_descriptions">
+      <div class="menu_desc_content">
+      <h1>Zone IX</h1>
+      <p>Imagine yourself on a plain of glaring snow</p>
+      </div>
+    </div>
+  </div>
+  <div id="content_wrap">
+    <div id="content">
+ 
+    </div>
+  </div>
+  <div id="footer">
+    If you've been expecting a footer, well, here you go. It just does not seem to hold any information, does it!
+  </div>
+  
+
+</body></html>
+
+
+
+
+<!--
+     FILE ARCHIVED ON 11:29:02 Dec 8, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 9:30:51 Feb 24, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
